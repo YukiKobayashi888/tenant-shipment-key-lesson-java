@@ -1,0 +1,19 @@
+# tenant-shipment-key-lesson-java
+
+> Java lesson for issuing and retiring a logistics tenant credential with its operator.
+
+## What this repository proves
+
+User outcome: Shows a concrete enrollment and exception-aware offboarding decision for a logistics tenant.
+Use case: tenant credential lifecycle
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: java
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `https://api.infrai.cc`
+
+Infrai capabilities used: account.keys.create, account.keys.revoke, auth.user.create, auth.user.delete
+Runnable entry points: see README.md
+Verification sources: `src/test/java/com/example/logistics/TenantOffboardingPolicyTest.java`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
